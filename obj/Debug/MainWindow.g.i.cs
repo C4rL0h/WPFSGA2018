@@ -9,6 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using MahApps.Metro.Controls;
 using ProyectoFinal;
 using System;
 using System.Diagnostics;
@@ -38,7 +39,7 @@ namespace ProyectoFinal {
     /// <summary>
     /// MainWindow
     /// </summary>
-    public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
+    public partial class MainWindow : MahApps.Metro.Controls.MetroWindow, System.Windows.Markup.IComponentConnector {
         
         private bool _contentLoaded;
         

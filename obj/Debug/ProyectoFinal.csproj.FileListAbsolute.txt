@@ -1,1 +1,7 @@
 c:\users\carlo\documents\visual studio 2015\Projects\ProyectoFinal\ProyectoFinal\bin\Debug\ProyectoFinal.exe.config
+C:\Users\soportecpo\WPFSGA2018\bin\Debug\ProyectoFinal.exe.config
+C:\Users\soportecpo\WPFSGA2018\obj\Debug\ProyectoFinal.csprojResolveAssemblyReference.cache
+C:\Users\soportecpo\WPFSGA2018\obj\Debug\MainWindow.g.cs
+C:\Users\soportecpo\WPFSGA2018\obj\Debug\App.g.cs
+C:\Users\soportecpo\WPFSGA2018\obj\Debug\ProyectoFinal_MarkupCompile.cache
+C:\Users\soportecpo\WPFSGA2018\obj\Debug\ProyectoFinal_MarkupCompile.lref
