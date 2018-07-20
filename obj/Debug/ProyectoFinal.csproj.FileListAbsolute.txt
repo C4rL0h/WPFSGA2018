@@ -5,3 +5,4 @@ C:\Users\soportecpo\WPFSGA2018\obj\Debug\MainWindow.g.cs
 C:\Users\soportecpo\WPFSGA2018\obj\Debug\App.g.cs
 C:\Users\soportecpo\WPFSGA2018\obj\Debug\ProyectoFinal_MarkupCompile.cache
 C:\Users\soportecpo\WPFSGA2018\obj\Debug\ProyectoFinal_MarkupCompile.lref
+C:\Users\soportecpo\WPFSGA2018\obj\Debug\Model\View\PuestoView.g.cs
