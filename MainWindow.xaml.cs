@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using MahApps.Metro.Controls;
+using ProyectoFinal.Model.ModelView;
 
 namespace ProyectoFinal
 {
@@ -23,6 +24,8 @@ namespace ProyectoFinal
     {
         public MainWindow()
         {
+            MainViewModel modelo = new MainViewModel();
+            this.DataContext = modelo;
             InitializeComponent();
         }
     }

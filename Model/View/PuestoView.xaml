@@ -6,7 +6,7 @@
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:local="clr-namespace:ProyectoFinal.Model.View"
         mc:Ignorable="d"
-        Title="PuestoView" Height="300" Width="300">
+        Title="Puestos" WindowStartupLocation="CenterScreen" Height="300" Width="300">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

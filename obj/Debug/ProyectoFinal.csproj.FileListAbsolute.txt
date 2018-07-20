@@ -25,3 +25,6 @@ C:\Users\soportecpo\WPFSGA2018\obj\Debug\ProyectoFinal.Properties.Resources.reso
 C:\Users\soportecpo\WPFSGA2018\obj\Debug\ProyectoFinal.csproj.GenerateResource.Cache
 C:\Users\soportecpo\WPFSGA2018\obj\Debug\ProyectoFinal.exe
 C:\Users\soportecpo\WPFSGA2018\obj\Debug\ProyectoFinal.pdb
+C:\Users\soportecpo\WPFSGA2018\obj\Debug\App.baml
+C:\Users\soportecpo\WPFSGA2018\obj\Debug\Resources\Icons.baml
+C:\Users\soportecpo\WPFSGA2018\obj\Debug\Resources\IconsNonShared.baml
