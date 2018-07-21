@@ -1,1 +1,2 @@
 c:\users\carlo\documents\visual studio 2015\Projects\ProyectoFinal\ProyectoFinal\bin\Debug\ProyectoFinal.exe.config
+C:\Users\carlo\Documents\Visual Studio 2015\proyectofinal\WPFSGA2018\bin\Debug\ProyectoFinal.exe.config

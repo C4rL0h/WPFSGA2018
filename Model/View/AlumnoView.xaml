@@ -1,0 +1,59 @@
+﻿<Controls:MetroWindow x:Class="ProyectoFinal.Model.View.AlumnoView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:SGA2018.View"
+        xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+        Dialog:DialogParticipation.Register="{Binding}"              
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="{Binding Titulo}" Height="600" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Margin="2" Grid.Row="0" Grid.Column="0" Content="Carne"/>
+        <TextBox IsReadOnly="{Binding IsReadOnlyCarne}" Margin="2" Controls:TextBoxHelper.ClearTextButton="True"  Controls:TextBoxHelper.Watermark="Debe ingrear un carné" Grid.Row="0" Grid.Column="1" Text="{Binding Carne}"/>
+        <Label Margin="2" Grid.Row="1" Grid.Column="0" Content="Nombres"/>
+        <TextBox IsReadOnly="{Binding IsReadOnlyNombres}" Margin="2" Controls:TextBoxHelper.ClearTextButton="True"  Controls:TextBoxHelper.Watermark="Debe ingresar un nombre" Grid.Row="1" Grid.Column="1" Text="{Binding Nombres}"></TextBox>
+        <Label Margin="2" Grid.Row="2" Grid.Column="0" Content="Apellidos"></Label>
+        <TextBox IsReadOnly="{Binding IsReadOnlyApellidos}" Margin="2" Controls:TextBoxHelper.ClearTextButton="True"  Controls:TextBoxHelper.Watermark="Debe ingresar un apellido" Grid.Row="2" Grid.Column="1" Text="{Binding Apellidos}"></TextBox>
+        <Label Margin="2" Grid.Row="3" Grid.Column="0" Content="Carrera"></Label>
+        <ComboBox IsEditable="False" IsEnabled="{Binding IsEnableCarrera}" Margin="2" Controls:TextBoxHelper.Watermark="Seleccionar" SelectedItem="{Binding CarreraSeleccionada}" Grid.Row="3" Grid.Column="1" ItemsSource="{Binding ListaCarreras}"></ComboBox>
+        <Label Margin="2" Grid.Row="4" Grid.Column="0" Content="Fecha Nacimiento"></Label>
+        <DatePicker IsEnabled="{Binding IsEnableFechaNacimiento}" Margin="2" SelectedDateFormat="Short" Grid.Row="4" Grid.Column="1" Text="{Binding FechaNacimiento}"></DatePicker>
+        <DataGrid AutoGenerateColumns="False" SelectedItem="{Binding Elemento}" Margin="10" Style="{StaticResource AzureDataGrid}" ColumnWidth="*" CanUserAddRows="False" Grid.Row="5" Grid.ColumnSpan="2" ItemsSource="{Binding ListaAlumnos}">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn 
+                    ElementStyle="{DynamicResource MetroDataGridCheckBox}"
+                    EditingElementStyle="{DynamicResource MetroDataGridCheckBox}"
+                    Header="Seleccionado"
+                    Binding="{Binding RelativeSource={RelativeSource AncestorType=DataGridRow}, Path=IsSelected, Mode=OneWay}"
+                 />
+                <DataGridTextColumn Binding="{Binding Carne}" Header="CARNE" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding Apellidos}" Header="APELLIDOS" IsReadOnly="False" />
+                <DataGridTextColumn Binding="{Binding Nombres}" Header="NOMBRES" IsReadOnly="False" />
+                <DataGridTextColumn Binding="{Binding Carrera.Descripcion}" Header="CARRERA" IsReadOnly="False" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Margin="10" Orientation="Horizontal" Grid.Row="6" Grid.ColumnSpan="2">
+            <Button Style="{StaticResource AccentedSquareButtonStyle}" Command="{Binding Instancia}" CommandParameter="Nuevo" IsEnabled="{Binding IsEnableNuevo}" Content="Nuevo"></Button>
+            <Button Style="{StaticResource AccentedSquareButtonStyle}" Command="{Binding Instancia}" CommandParameter="Eliminar" IsEnabled="{Binding IsEnableEliminar}" Content="Eliminar"></Button>
+            <Button Style="{StaticResource AccentedSquareButtonStyle}" Command="{Binding Instancia}" CommandParameter="Editar" IsEnabled="{Binding IsEnableEditar}" Content="Editar"></Button>
+            <Button Style="{StaticResource AccentedSquareButtonStyle}" Command="{Binding Instancia}" CommandParameter="Guardar" IsEnabled="{Binding IsEnableGuardar}" Content="Guadar"></Button>
+            <Button Style="{StaticResource AccentedSquareButtonStyle}" Command="{Binding Instancia}" CommandParameter="Cancelar" IsEnabled="{Binding IsEnableCancelar}" Content="Cancelar"></Button>
+        </StackPanel>
+    </Grid>
+</Controls:MetroWindow>
