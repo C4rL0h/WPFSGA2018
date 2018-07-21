@@ -4,17 +4,30 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\carlo\Documents\Visual Studio 2015\proyectofinal\WPFSGA2018\obj\Debug\
+=======
+C:\Users\soportecpo\WPFSGA2018\obj\Debug\
+>>>>>>> origin/developer
 ProyectoFinal
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\carlo\Documents\Visual Studio 2015\proyectofinal\WPFSGA2018\App.xaml
 490614085
 
 201070670620
 19298168187
 MainWindow.xaml;Model\View\AlumnoView.xaml;Resources\Icons.xaml;Resources\IconsNonShared.xaml;
+=======
+C:\Users\soportecpo\WPFSGA2018\App.xaml
+4635030663
+
+13-931783185
+191035416832
+MainWindow.xaml;Model\View\PuestoView.xaml;Resources\Icons.xaml;Resources\IconsNonShared.xaml;
+>>>>>>> origin/developer
 
 True
 

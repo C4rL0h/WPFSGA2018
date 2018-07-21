@@ -16,5 +16,9 @@
                 <ResourceDictionary Source="/Resources/Icons.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/developer
     </Application.Resources>
 </Application>

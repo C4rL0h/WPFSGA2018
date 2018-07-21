@@ -1,4 +1,8 @@
 ﻿<Controls:MetroWindow x:Class="ProyectoFinal.MainWindow"
+<<<<<<< HEAD
+=======
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+>>>>>>> origin/developer
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -8,10 +12,17 @@
         WindowState="Maximized"
         TitleAlignment="Center"
         mc:Ignorable="d"
+<<<<<<< HEAD
         Title="Sistema de control academico" Height="350" Width="525">
     <Controls:MetroWindow.RightWindowCommands>
         <Controls:WindowCommands>
             <Button Content="Edwin Tumax" />
+=======
+        Title="Sistema de control academico" WindowState="Maximized" Height="350" Width="525">
+    <Controls:MetroWindow.RightWindowCommands>
+        <Controls:WindowCommands>
+            <Button Content="Puestos" Command="{Binding Instancia}" CommandParameter="Puestos" />
+>>>>>>> origin/developer
             <Button>
                 <StackPanel Orientation="Horizontal">
                     <Rectangle Width="20"
@@ -23,11 +34,16 @@
                     </Rectangle>
                     <TextBlock Margin="4 0 0 0"
                    VerticalAlignment="Center"
+<<<<<<< HEAD
                    Text="Login" />
+=======
+                   Text="Puestos" />
+>>>>>>> origin/developer
                 </StackPanel>
             </Button>
         </Controls:WindowCommands>
     </Controls:MetroWindow.RightWindowCommands>
+<<<<<<< HEAD
     <Controls:MetroWindow.LeftWindowCommands>
         <Controls:WindowCommands>
             <StackPanel Name="MenuPrincipal" Orientation="Horizontal">
@@ -47,4 +63,6 @@
             </StackPanel>
         </Controls:WindowCommands>
     </Controls:MetroWindow.LeftWindowCommands>
+=======
+>>>>>>> origin/developer
 </Controls:MetroWindow>
